@@ -57,7 +57,6 @@ module.exports = {
       },
       animation: {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
-        planet: "planet calc(var(--duration)*1s) ease-in-out infinite",
       },
       keyframes: {
         orbit: {
@@ -68,17 +67,6 @@ module.exports = {
           "100%": {
             transform:
               "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
-          },
-        },
-        planet: {
-          "0%": {
-            transform: "scale(1)",
-          },
-          "50%": {
-            transform: "scale(1.2)",
-          },
-          "100%": {
-            transform: "scale(1)",
           },
         },
       },
