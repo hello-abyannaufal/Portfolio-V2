@@ -21,8 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#08253c] text-[#37abff]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#08253c]  text-[#37abff]`}
       >
+        <div className="antialiased absolute top-1/2 -right-1/2 -z-10 animate-pulse duration-[100ms]">
+          <div className="gradient-circle " />
+        </div>
+
         {children}
       </body>
     </html>

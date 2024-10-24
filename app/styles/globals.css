@@ -70,3 +70,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.gradient-circle {
+  width: 100vw; /* Set the width of the circle */
+  height: 100vh; /* Set the height of the circle */
+  border-radius: 50%; /* This makes the div circular */
+  background: radial-gradient(
+    circle,
+    rgba(135, 206, 235, 0.2) 0%,
+    rgba(173, 216, 230, 0) 60%
+  ); /* Radial gradient from yellow to transparent */
+  filter: blur(30px); /* Apply a blur effect to soften the edges */
+  position: relative; /* Positioning context for potential additional effects */
+}
