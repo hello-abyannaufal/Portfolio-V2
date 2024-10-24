@@ -6,13 +6,12 @@ import {
   FaJsSquare,
   FaPython,
   FaUser,
-  FaJava,
   FaLinkedin,
   FaKaggle,
   FaInstagram,
   FaDiscord,
   FaVuejs,
-  FaGit,
+  FaGitAlt,
 } from "react-icons/fa";
 
 export default function Orbit() {
@@ -100,65 +99,75 @@ function delayPlanet(planets, config) {
 }
 
 const planetStyle =
-  "text-[40px] transition-transform duration-300 ease-in-out transform hover:scale-150 opacity-80 active:scale-100 ";
+  "transition-transform duration-300 ease-in-out transform hover:scale-150 opacity-90 active:scale-100 ";
 const planets = [
   {
-    icon: <FaGithub className={planetStyle} />,
+    icon: <FaGithub className={`${planetStyle} text-[#FFFFFF] text-[40px]`} />,
     link: "https://github.com/hello-abyannaufal",
     orbit: "inner",
   },
   {
-    icon: <FaKaggle className={planetStyle} />,
+    icon: <FaKaggle className={`${planetStyle} text-[#1abfff] text-[40px]`} />,
     link: "https://www.kaggle.com/abyannaufal27",
     orbit: "inner",
   },
   {
-    icon: <FaLinkedin className={planetStyle} />,
+    icon: (
+      <FaLinkedin className={`${planetStyle} text-[#0077b4] text-[40px]`} />
+    ),
     link: "https://www.linkedin.com/in/abyannaufal27/",
     orbit: "inner",
   },
   {
-    icon: <FaXTwitter className={planetStyle} />,
+    icon: (
+      <FaXTwitter className={`${planetStyle} text-[#FFFFFF] text-[50px]`} />
+    ),
     link: "https://x.com/abyannaufal27/",
     orbit: "middle",
   },
   {
-    icon: <FaInstagram className={planetStyle} />,
+    icon: (
+      <FaInstagram className={`${planetStyle} text-[#dd2a7b] text-[50px]`} />
+    ),
     link: "https://www.instagram.com/abyannaufal27/",
     orbit: "middle",
   },
   {
-    icon: <FaDiscord className={planetStyle} />,
+    icon: <FaDiscord className={`${planetStyle} text-[#5d6af2] text-[50px]`} />,
     link: "https://discord.com/users/489782785230503967",
     orbit: "middle",
   },
   {
-    icon: <FaJsSquare className={planetStyle} />,
+    icon: (
+      <FaJsSquare className={`${planetStyle} text-[#f0db4f] text-[60px]`} />
+    ),
     link: "https://www.javascript.com/",
     orbit: "outer",
   },
   {
-    icon: <FaVuejs className={planetStyle} />,
+    icon: <FaVuejs className={`${planetStyle} text-[#42b883] text-[60px]`} />,
     link: "https://vuejs.org/",
     orbit: "outer",
   },
   {
-    icon: <FaReact className={planetStyle} />,
+    icon: <FaReact className={`${planetStyle} text-[#75f4f4] text-[60px]`} />,
     link: "https://react.dev/",
     orbit: "outer",
   },
   {
-    icon: <FaPython className={planetStyle} />,
+    icon: <FaPython className={`${planetStyle} text-[#4584b6] text-[60px]`} />,
     link: "https://www.python.org/",
     orbit: "outer",
   },
   {
-    icon: <ImTerminal className={planetStyle} />,
+    icon: (
+      <ImTerminal className={`${planetStyle} text-[#FFFFFF] text-[60px]`} />
+    ),
     link: "https://learn.microsoft.com/en-us/windows/wsl/",
     orbit: "outer",
   },
   {
-    icon: <FaGit className={planetStyle} />,
+    icon: <FaGitAlt className={`${planetStyle} text-[#f15536] text-[60px]`} />,
     link: "https://git-scm.com/",
     orbit: "outer",
   },
